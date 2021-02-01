@@ -166,7 +166,7 @@ public class Cuadro {
             seriesKeyId.put("descripEsp",JSONObject.NULL);
                         
             ///Aca agregar más objetos del cuadro, o armar un ciclo donde se vayan completando 
-            //...
+            //....
 
             //Agregar elementos al array
             JSONArray  seriesKeyIds = new JSONArray();
@@ -195,7 +195,7 @@ public class Cuadro {
 
 
 
-            //Agrega response al json
+            //Agrega response al json final
             cuadro.put("response",response);
             // Generar cadena de texto JSON
             System.out.print(cuadro);
