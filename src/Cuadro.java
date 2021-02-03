@@ -33,6 +33,7 @@ public class Cuadro {
             //JSONArray  calculos = new JSONArray();
             JSONObject calculo = new JSONObject();
             
+            //elemnto del array
             calculo.put("codCalculo","YTYPCT");
             calculo.put("descripcionCalculo","Prueba de desarrollo");
             calculo.put("numDecimales",new Integer(21));
@@ -40,6 +41,7 @@ public class Cuadro {
             
             JSONArray  calculos = new JSONArray();
             calculos.put(calculo);
+            //Se agrega el array al elemento Response
             response.put("calculos", calculos);
     
             
@@ -92,7 +94,8 @@ public class Cuadro {
             //Agregar elementos al array
             JSONArray  metadatosArray = new JSONArray();
             metadatosArray.put(metadato);
-            metadatos.put("Metadatos", frecuencias);
+            
+            metadatos.put("Metadatos", metadatosArray);
             
             //NOTAS
 
@@ -152,6 +155,9 @@ public class Cuadro {
             serie.put("numeroFilaStr","0");
             serie.put("padreKeyId",JSONObject.NULL);
 
+
+
+            
             //Obejeto del array
             JSONObject seriesKeyId = new JSONObject();            
             
@@ -168,17 +174,11 @@ public class Cuadro {
             ///Aca agregar más objetos del cuadro, o armar un ciclo donde se vayan completando 
             //....
 
-            //Agregar elementos al array
-            JSONArray  seriesKeyIds = new JSONArray();
-            seriesKeyIds.put(seriesKeyId);
-            serie.put("seriesKeyId", seriesKeyIds);            
+            serie.put("seriesKeyId", seriesKeyId);
+         
 
             //Ultimo elemento de Serie
             serie.put("spanishTitle","Imacec empalmado, serie original (índice 2013=100)");
-
-
-
-
 
 
             //Agregar elementos al array
